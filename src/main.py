@@ -10,7 +10,7 @@ def main():
         "2": ("Cliente TCP", cliente_tcp),
         "3": ("Servidor UDP", servidor_udp),
         "4": ("Cliente UDP", cliente_udp),
-        "5": ("Parar Servidor", None),  # Nova opção para parar o servidor
+        "5": ("Parar Servidor", None),  
     }
 
     while True:
@@ -23,11 +23,11 @@ def main():
         if escolha in opcoes:
             _, funcao = opcoes[escolha]
             
-            if funcao is None:  # Se for a opção "Parar Servidor", sair do loop
+            if funcao is None:  
                 print("Parando os servidores... Até logo!")
-                break  # Encerra o loop e para o servidor
+                break  
             else:
-                funcao()  # Executa a função correspondente
+                funcao()  
         else:
             print("Opção inválida!")
 
