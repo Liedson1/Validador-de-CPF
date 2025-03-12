@@ -16,7 +16,8 @@ src/
 ├── servidor/
 │   ├── servidor_tcp.py
 │   └── servidor_udp.py
-├── validar_cpf.py
+├── utils/
+│   └── validar_cpf.py
 ├── main.py
 └── README.md
 ```
@@ -47,28 +48,37 @@ python main.py
 4 - Cliente UDP
 5 - Parar Servidor
 ```
-🌐 Executando o Servidor na Rede Local
+
+---
+
+## 🌐 Executando o Servidor na Rede Local
 
 Por padrão, o servidor escuta apenas em localhost. Para permitir conexões externas na rede local, altere o IP na função bind() do socket:
 
+```python
 server.bind(("0.0.0.0", 65432))
+```
 
 Isso fará com que o servidor aceite conexões de qualquer dispositivo na mesma rede.
 
-🔗 Acessando o Servidor Externamente
+🔗 **Acessando o Servidor Externamente**
 
 Certifique-se de que o firewall está configurado para permitir conexões na porta usada.
 
 Descubra o IP local do servidor executando:
 
+```sh
 ipconfig # Windows
 ifconfig # Linux/Mac
+```
 
 No cliente, ao conectar, substitua localhost pelo IP obtido.
 
 Exemplo de alteração no cliente:
 
+```python
 client.connect(("192.168.1.100", 65432))  # IP do servidor
+```
 
 Agora, qualquer dispositivo na mesma rede poderá se conectar ao servidor.
 
