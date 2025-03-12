@@ -1,14 +1,18 @@
-# Sistema de Validação de CPF - Cliente/Servidor (TCP e UDP)
+#Sistema de Validação de CPF - Cliente/Servidor (TCP e UDP)
 Este projeto é uma implementação de um sistema de validação de CPF utilizando os protocolos TCP e UDP em Python.
 A aplicação cliente envia um número de CPF e o servidor realiza a validação, retornando se o CPF é válido ou não.
 O projeto consiste em requisito para obtençao de nota da disciplina Sistemas Distribuídos ministrada pelo professor Tercio Silva.
 
-📂 ## Estrutura do Projeto
+📂 ##Estrutura do Projeto
 projeto-cpf/
 ├── cliente/
+
 │   ├── cliente_tcp.py
+
 │   └── cliente_udp.py
+
 ├── servidor/
+
 │   ├── servidor_tcp.py
 │   └── servidor_udp.py
 ├── utils/
@@ -20,7 +24,7 @@ projeto-cpf/
 - Python 3
 - Sockets (TCP e UDP)
   
-⚙️ ## Como Rodar o Projeto
+⚙️ ##Como Rodar o Projeto
 **Clone o repositório:**
 git clone https://github.com/seuusuario/projeto-cpf.git
 cd projeto-cpf
@@ -33,12 +37,12 @@ python main.py
 4 - Cliente UDP
 5 - Parar Servidor
 
-📝 ## Como Funciona
-Servidor: Aguarda conexões de clientes e valida o CPF recebido.
-Cliente: Envia o CPF para o servidor e aguarda a resposta.
-Validação: A verificação é realizada utilizando um algoritmo que verifica os dígitos verificadores.
+📝 ##Como Funciona
+**Servidor:** Aguarda conexões de clientes e valida o CPF recebido.
+**Cliente:** Envia o CPF para o servidor e aguarda a resposta.
+**Validação:** A verificação é realizada utilizando um algoritmo que verifica os dígitos verificadores.
 
-🚩 ## Finalizando o Servidor
+🚩 ##Finalizando o Servidor
 Para encerrar o servidor, digite: STOP
 Isso enviará uma solicitação para o servidor parar e exibir uma mensagem de encerramento.
 
