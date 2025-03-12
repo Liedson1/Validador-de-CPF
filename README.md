@@ -9,15 +9,14 @@ Este projeto é um requisito para obtenção de nota na disciplina **Sistemas Di
 
 ## 📂 Estrutura do Projeto
 ```
-projeto-cpf/
+src/
 ├── cliente/
 │   ├── cliente_tcp.py
 │   └── cliente_udp.py
 ├── servidor/
 │   ├── servidor_tcp.py
 │   └── servidor_udp.py
-├── utils/
-│   └── validar_cpf.py
+├── validar_cpf.py
 ├── main.py
 └── README.md
 ```
@@ -88,12 +87,3 @@ O programa principal (`main.py`) exibe um menu para que o usuário escolha a fun
 - **José Vinicius Cavalcante Soares** - 22112113
 - **Liedson da Silva Santos** - 22110823
 - **Thalia de Oliveira Santos** - 21110245
-
-
-
-## Desenvolvedores
-José Vinicius Cavalcante Soares - 22112113
-
-Liedson da Silva Santos - 22110823
-
-Thalia de Oliveira Santos - 21110245
